@@ -7,12 +7,16 @@ import Products from './components/Products';
 function App() {
 	return (
 		<>
+		<div>
 			<Navbar/>
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route exact path="/products" component={Products} />
+			{/* <Switch> */}
+			<Home/>
+			<Products/>
+				{/* <Route exact path="/" component={Home} />
+				<Route exact path="/products" component={Products} /> */}
 				<Home/>
-			</Switch>
+			{/* </Switch> */}
+		</div>
 		</>
 	);
 }
